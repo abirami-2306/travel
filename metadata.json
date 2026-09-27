@@ -1,0 +1,6 @@
+{
+  "name": "AuraVoyage - Luxury & Adventure Travel Expeditions",
+  "description": "Discover handcrafted travel packages, interactive trip builder, immersive 360° previews, dynamic budget splitter, and an AI-powered travel concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
