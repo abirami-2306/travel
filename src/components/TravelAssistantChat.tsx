@@ -102,8 +102,9 @@ export const TravelAssistantChat: React.FC = () => {
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('API response was not ok');
+      const contentType = response.headers.get('content-type');
+      if (!response.ok || !contentType || !contentType.includes('application/json')) {
+        throw new Error('API not available on static hosting');
       }
 
       const data = await response.json();
